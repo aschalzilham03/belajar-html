@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Form </title>
+    <link rel="icon" href="./img/logo.png">
+</head>
+<body>
+    <h1 contenteditable="true">Halaman Form</h1>
+    <p>HTML form adalah salah satu elemen dalam web dev yang memungkinkan audiens untuk memasukan data dan berinteraksi dengan website</p>
+    <hr>
+
+    <!-- Format berikut belum berfungsi, karena harus menggunakan javascript terlebih dahulu. 
+    Namun ini hanyalah gambaran dalam penggunaan tag fieldset. -->
+    <form action="">
+        <fieldset>
+            <legend>Jawablah pilihan ganda berikut!</legend>
+            <p>1. Siapakah nama hacker yang sedang naik daun saat ini?</p>
+                <input type="radio" name="jawaban" id="jawaban1" value="A"> <label for="jawaban1">Megawati</label><br>
+                <input type="radio" name="jawaban" id="jawaban2" value="B"> <label for="jawaban2">Jokowi</label><br>
+                <input type="radio" name="jawaban" id="jawaban3" value="C"> <label for="jawaban3">Bjorka</label><br>
+                <input type="radio" name="jawaban" id="jawaban4" value="D"> <label for="jawaban4">Bjirr</label><br>
+            
+            <p>2. Sebutkan nama-nama ikan!</p>
+                <input type="radio" name="jawaban" id="jawaban-1" value="A"> <label for="jawaban-1">Salmon</label><br>
+                <input type="radio" name="jawaban" id="jawaban-2" value="B"> <label for="jawaban-2">Tuna</label><br>
+                <input type="radio" name="jawaban" id="jawaban-3" value="C"> <label for="jawaban-3">Paus</label><br>
+                <input type="radio" name="jawaban" id="jawaban-4" value="D"> <label for="jawaban-4">Semua Benar</label><br>
+
+            <p>3. Bagaimana cara kerja kipas angin?</p>
+                <input type="radio" name="jawaban" id="jawaban_1" value="A"> <label for="jawaban_1">Di anuin</label><br>
+                <input type="radio" name="jawaban" id="jawaban_2" value="B"> <label for="jawaban_2">Di gituin</label><br>
+                <input type="radio" name="jawaban" id="jawaban_3" value="C"> <label for="jawaban_3">Gk tau</label><br>
+                <input type="radio" name="jawaban" id="jawaban_4" value="D"> <label for="jawaban_4">Bebas</label><br><br>
+            <button type="submit">Submit</button>
+        </fieldset><br>
+    </form>
+
+    <form action="" method="get">
+        <h2>Latihan Form</h2>
+        <table border="0">
+            <h2>Formulir Pendaftaran STM Tadika Mesra</h2>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="nama" id="nama" size="30"></td>
+            </tr>
+            <tr>
+                <td>NISN</td>
+                <td>:</td>
+                <td><input type="text" name="nisn" id="nisn" size="30" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="password" id="password" size="30" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" name="mail" id="mail" size="30" required></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tempat" id="tempat" size="30"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date" name="tanggal" id="tanggal" style="width: 232px;"></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon</td>
+                <td>:</td>
+                <td><input type="tel" name="telepon" id="telepon" pattern="(62)[0-9]{5,15}" size="30"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="opsi" id="opsi" value="Laki-Laki">Laki-Laki
+                    <input type="radio" name="opsi" id="opsi" value="Perempuan">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="agama" id="agama" value="Islam">Islam
+                    <input type="checkbox" name="agama" id="agama" value="Kristen">Kristen
+                    <input type="checkbox" name="agama" id="agama" value="Hindu">Hindu
+                    <input type="checkbox" name="agama" id="agama" value="Budha">Budha
+                    <input type="checkbox" name="agama" id="agama" value="Lainnya">Lainnya
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="alamat" id="alamat" cols="27" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Pilih Jurusan</td>
+                <td>:</td>
+                <td>
+                    <select style="width: 233px;">
+                        <option>Pilih Jurusan Anda</option>
+                        <option value="TKJ">Teknik Komputer dan Jaringan</option>
+                        <option value="RPL">Rekayasa Perangkat Lunak</option>
+                        <option value="SI">Sistem Operasi</option>
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="CS">Cyber Security</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Nilai Ujian</td>
+                <td>:</td>
+                <td><input type="number" name="nu" id="nu" value="0" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td>Nilai Akhir</td>
+                <td>:</td>
+                <td><input type="range" name="na" id="na" value="0" min="0" max="100" step="5"></td>
+            </tr>
+            <tr>
+                <td>Upload Ijazah</td>
+                <td>:</td>
+                <td><input type="file" name="ijazah" id="ijazah" accept=".pdf"></td>
+            </tr>
+            <tr>
+                <td>Upload Foto</td>
+                <td>:</td>
+                <td><input type="file" name="ijazah" id="ijazah" accept=".jpeg,.png"></td>
+            </tr>
+            <tr>
+                <td>Link Sosmed</td>
+                <td>:</td>
+                <td><input type="url" name="sosmed" id="sosmed" size="30"></td>
+            </tr>
+            <tr>
+                <td>Warna Favorit</td>
+                <td>:</td>
+                <td><input type="color" name="favorit" id="favorit"></td>
+            </tr>
+            <tr>
+                <td>Tahun dan Waktu Lulus</td>
+                <td>:</td>
+                <td><input type="datetime-local" name="tahunwaktu" id="tahunwaktu" style="width: 232px;"></td>
+            </tr>
+            <tr>
+                <td>Bulan Lulus</td>
+                <td>:</td>
+                <td><input type="month" name="bulan" id="bulan" value="2024-01" style="width: 232px;"></td>
+            </tr>
+            <tr>
+                <td>Waktu Bangun</td>
+                <td>:</td>
+                <td><input type="time" name="bangun" id="bangun" value="05:00" style="width: 232px;"></td>
+            </tr>
+            <tr>
+                <td>Waktu Mulai Magang</td>
+                <td>:</td>
+                <td><input type="week" name="magang" id="magang" value="2024-W01" style="width: 232px;"></td>
+            </tr>
+            <tr>
+                <td>Waktu Selesai Magang</td>
+                <td>:</td>
+                <td><input type="week" name="magang" id="magang" value="2024-W52" style="width: 232px;"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
